@@ -1,0 +1,19 @@
+
+
+<h1>client churned status  1 for Churned and 0 for active</h1>
+
+
+<form action="{{url_for('dataprediction')}}" method="POST">
+    <input type="text" name="age" placeholder="age" required="required"><br>
+    <input type="text" name="gender" placeholder="gender" required="required"><br>
+    <input type="text" name="subscription_type" placeholder="subscription_type" required="required"><br>
+    <input type="text" name="watch_hours" placeholder="watch_hours" required="required"><br>
+    <input type="text" name="last_login_days" placeholder="last_login_days" required="required"><br>
+    <input type="text" name="region" placeholder="region" required="required"><br>
+    <input type="text" name="device" placeholder="device" required="required"><br>
+    <input type="text" name="monthly_fee" placeholder="monthly_fee" required="required"><br>
+<button type="submit" class="btn btn-primary btn-block btn-large">predict</button>
+</form>
+<h2>
+    the prediction is {{result}}
+</h2>
